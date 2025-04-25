@@ -46,7 +46,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="py-16 px-6 dark:bg-gray-900">
+    <div id="projects" className="py-20 my-10 px-6 dark:bg-gray-900">
       <h1 className="text-center text-4xl font-semibold mb-12 dark:text-white">
         My Projects
       </h1>
