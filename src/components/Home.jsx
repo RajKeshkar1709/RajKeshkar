@@ -1,12 +1,15 @@
 const Home = () => {
   const handleDownloadResume = () => {
-    const fileId = "1-53yT1chGzIUGpvbJwDDzurUI5CcJO0Y";
+    const fileId = "1EMn9Mpy3dIdBy5S4VbDEhTfVWcsgRZnX";
     window.open(`https://drive.google.com/file/d/${fileId}/preview`, "_blank");
+  
     const a = document.createElement("a");
     a.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
     a.download = "Saurabh-Shambharkar-Resume.pdf";
     a.click();
   };
+  
+  
   
   return (
     <div name="home" className="h-screen flex items-center justify-center">
