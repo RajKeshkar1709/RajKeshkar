@@ -35,6 +35,12 @@ Skilled **Front‑End Developer** with expertise in **HTML**, **CSS**, **JavaScr
   </a>
 </p>
 
+<p>
+  <a target="_blank" href="https://saurabhshambharkar.netlify.app/" style="display: inline-block;">
+    <img src="https://img.shields.io/badge/portfolio-black?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" />
+  </a>
+</p>
+
 ### 📊 GitHub Stats
 
 <a target="_blank" href="https://github.com/saurabhshambharkar">
