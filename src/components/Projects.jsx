@@ -9,9 +9,9 @@ const Projects = () => {
     {
       id: 1,
       title: "WorldAtlas – Discover Countries with Ease",
-      image: "/worldAtlas.png",
+      image: "/RajKeshkar/worldAtlas.png",
       description:
-        "WorldAtlas is an interactive and responsive web app that allows users to explore countries around the globe. With real-time data and a clean UI, it provides detailed information about each country’s name, capital, population, region, and flag, helping users learn about the world effortlessly.",
+        "WorldAtlas is an interactive and responsive web app that allows users to explore countries around the globe...",
       techStack: "HTML | CSS | React",
       features:
         "Search by country name, country details page, dynamic country cards, responsive layout, live REST API integration, and modern UI using HTML, CSS, and React.",
@@ -22,22 +22,21 @@ const Projects = () => {
     {
       id: 2,
       title: "ai-command-assistant",
-      image: "/Ai-Assistant.png",
+      image: "/RajKeshkar/Ai-Assistant.png",
       description:
-        "AI Assistant is a smart and interactive voice-based web assistant that listens to user commands and responds using speech synthesis. Designed for hands-free interaction, it performs tasks like opening websites, speaking responses, and executing simple logic based on recognized speech input.",
+        "AI Assistant is a smart and interactive voice-based web assistant...",
       techStack: "HTML | CSS | Javascript",
       features:
         "Speech recognition using Web Speech API, Voice responses using speech synthesis, Executes commands like opening Google, YouTube, etc.",
-      githubLink:
-        "https://github.com/RajKeshkar1709/ai-command-assistant",
+      githubLink: "https://github.com/RajKeshkar1709/ai-command-assistant",
       liveLink: "https://ai-command-assistant.netlify.app/",
     },
     {
       id: 3,
       title: "NovelHub",
-      image: "/NovelHub.png",
+      image: "/RajKeshkar/NovelHub.png",
       description:
-        "NovelHub is a clean and interactive web platform for discovering, organizing, and managing novels. Designed with a user-friendly interface, it allows users to add, edit, and view novels easily while showcasing dynamic content updates and smooth navigation using pure JavaScript.",
+        "NovelHub is a clean and interactive web platform for discovering, organizing, and managing novels...",
       techStack: "HTML | CSS | Firebase | Javascript",
       features:
         "Add / Edit / View novels,Responsive design,Clean UI with HTML & CSS,Dynamic DOM updates",
@@ -47,15 +46,16 @@ const Projects = () => {
     {
       id: 4,
       title: "HireHub – Recruitment Management API (Backend)",
-      image: "",
+      image: "", // No image
       description:
-        "HireHub is a robust and scalable backend system designed to power a modern recruitment platform. Built using Node.js, Express, and MongoDB, it supports job postings, applications, referrals, interview scheduling, and role-based access for recruiters and jobseekers.",
-      techStack: "Node.js | Express.js | MongoDB | PostMan | Javascript | JWT Web Token",
+        "HireHub is a robust and scalable backend system designed to power a modern recruitment platform...",
+      techStack:
+        "Node.js | Express.js | MongoDB | PostMan | Javascript | JWT Web Token",
       features:
-        "JWT-based authentication, Role-based access (Recruiter & Jobseeker), Create and manage job posts, Apply to jobs & track applications, Schedule interviews & give feedback, Candidate ranking system, Referral handling, Clean RESTful API architecture, MongoDB with Mongoose for data modeling",
+        "JWT-based authentication, Role-based access (Recruiter & Jobseeker), Create and manage job posts, Apply to jobs & track applications...",
       githubLink: "https://github.com/RajKeshkar1709/HireHub",
       liveLink: "https://github.com/RajKeshkar1709/HireHub",
-    }
+    },
   ];
 
   return (
@@ -70,13 +70,15 @@ const Projects = () => {
             key={project.id}
             className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden max-w-md transform transition-transform hover:scale-105"
           >
-            <div className="w-full">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full object-cover"
-              />
-            </div>
+            {project.image && (
+              <div className="w-full">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full object-cover"
+                />
+              </div>
+            )}
 
             <div className="p-6">
               <h2 className="text-xl font-semibold mb-4 dark:text-white">
