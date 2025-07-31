@@ -9,7 +9,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start ">
         <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
           <p className="text-lg text-gray-700 mb-4 hover:translate-x-2 transition-transform dark:text-white">
-            <strong className="text-red-500">Name:</strong> Saurabh Shambharkar
+            <strong className="text-red-500">Name:</strong> Raj Keshkar
           </p>
           <p className="text-lg text-gray-700 mb-4 hover:translate-x-2 transition-transform dark:text-white">
             <strong className="text-red-500">Higher Education:</strong> Bachelor
@@ -23,15 +23,12 @@ const About = () => {
 
         <div className="p-4 animate-fadeIn delay-400">
           <p className="text-lg text-gray-600 dark:text-white leading-relaxed text-justify">
-            Hi I'm Saurabh Shambharkar, a Front-End Developer passionate about building responsive and visually engaging websites. 
-            I started my web development journey in 2024, driven by a love for coding and creativity. I enjoy turning ideas into smooth, interactive digital experiences.
+            Hi, I&apos;m Raj Keshkar, a MERN Stack Developer passionate about creating scalable web applications and seamless user experiences. I began my development journey in 2024, combining my interest in design and logic to build complete solutions  from responsive front-end interfaces to efficient, secure back-end systems. I love turning complex problems into clean, functional, and interactive digital products.
           </p>
           <p className="text-lg text-gray-600 dark:text-white leading-relaxed text-justify mt-6">
-            I specialize in HTML, CSS, JavaScript, React.js, Redux, and modern
-            front-end tools, focusing on clean design and user-friendly
-            interfaces. I’m always eager to learn, explore new technologies, and
-            bring ideas to life through code. Let’s collaborate to create
-            something amazing!
+           I specialize in HTML, CSS, JavaScript, React.js, Node.js, Express, and MongoDB. I work on both the front-end and the back-end. I focus on building clean designs and user-friendly websites. I enjoy learning new technologies and turning ideas into real, working applications. Let’s work together to build something great!
+
+
           </p>
         </div>
       </div>

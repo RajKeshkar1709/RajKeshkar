@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import emailjs from "emailjs-com";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     const templateParams = {
-      to_email: "sshambharkar091@gmail.com",
+      to_email: "rajkeshkar1709@gmail.com",
       from_name: formData.name,
       from_email: formData.email,
       subject: formData.subject,
@@ -34,10 +34,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_d5rhgxm",
-        "template_xtk2qlq",
+        "service_om4z6kd",
+        "template_foiro7s",
         templateParams,
-        "MxpPdyoJE276xobL9"
+        "8fbkWwitjhBv59MrT"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -126,23 +126,23 @@ const Contact = () => {
               <span className="text-gray-600">
                 <Phone />{" "}
               </span>
-              <span>+919096887183</span>
+              <span>+917028131602</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="text-gray-600">
                 <Mail />
               </span>
               <a
-                href="mailto:sshambharkar091@gmail.com"
+                href="mailto:rajkeshkar1709@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                sshambharkar091@gmail.com
+                rajkeshkar1709@gmail.com
               </a>
             </div>
 
             <div className="flex space-x-6">
               <a
-                href="https://www.linkedin.com/in/saurabh-shambharkar/"
+                href="https://www.linkedin.com/in/raj-keshkar-315040280/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-600 hover:text-blue-600 transition duration-300"
@@ -150,7 +150,7 @@ const Contact = () => {
                 <Linkedin />
               </a>
               <a
-                href="https://github.com/saurabhshambharkar"
+                href="https://github.com/RajKeshkar1709"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-600 hover:text-red-700 transition duration-300"
@@ -164,7 +164,7 @@ const Contact = () => {
 
       <marquee>
         <footer className="mt-16 text-center text-gray-600  dark:text-white text-x">
-          © 2025 All rights reserved | This template is made by Saurabh Shambharkar.
+          © 2025 All rights reserved | This template is made by Raj Keshkar.
         </footer>
       </marquee>
     </div>

@@ -1,5 +1,4 @@
-import React from "react";
-import GitHubCalendar from "react-github-calendar";
+//import React from "react";
 
 const Projects = () => {
   const openInNewTab = (url) => {
@@ -9,40 +8,54 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "VIBESTREEM.COM",
-      image: "/Vibestream.png",
+      title: "WorldAtlas – Discover Countries with Ease",
+      image: "/worldAtlas.png",
       description:
-        "Vibestream is a sleek and user-friendly music streaming platform designed for music lovers who enjoy seamless access to their favorite tracks, artists, and playlists.",
+        "WorldAtlas is an interactive and responsive web app that allows users to explore countries around the globe. With real-time data and a clean UI, it provides detailed information about each country’s name, capital, population, region, and flag, helping users learn about the world effortlessly.",
       techStack: "HTML | CSS | React",
-      features: "Navbar, Admin Panel, Music Playing, Login, SignUp, etc.",
+      features:
+        "Search by country name, country details page, dynamic country cards, responsive layout, live REST API integration, and modern UI using HTML, CSS, and React.",
       githubLink:
-        "https://github.com/saurabhshambharkar/B41_WEB_006_UI-UX-Unleashed",
-      liveLink: "https://warm-cheesecake-8bfc28.netlify.app/",
+        "https://github.com/RajKeshkar1709/Worldatlas-country-explorer",
+      liveLink: "https://worldatlas-countryexplorers.netlify.app/",
     },
     {
       id: 2,
-      title: "Code Crafter",
-      image: "/Codecrafter.png",
+      title: "ai-command-assistant",
+      image: "/Ai-Assistant.png",
       description:
-        "A fast, responsive front‑end shop for men’s, women’s & kids’ fashion plus beauty essentials..",
-      techStack: "HTML | CSS | Javascript | Firebase",
+        "AI Assistant is a smart and interactive voice-based web assistant that listens to user commands and responds using speech synthesis. Designed for hands-free interaction, it performs tasks like opening websites, speaking responses, and executing simple logic based on recognized speech input.",
+      techStack: "HTML | CSS | Javascript",
       features:
-        "Multi‑Category Catalog, Smart Cart & Checkout , Responsive & PWA, Instant Search & Filters, Pure Front‑End.",
-      githubLink: "https://github.com/saurabhshambharkar/B42_WEB_001_Code-Crafters?tab=readme-ov-file",
-      liveLink: "https://sweet-pothos-685387.netlify.app/",
+        "Speech recognition using Web Speech API, Voice responses using speech synthesis, Executes commands like opening Google, YouTube, etc.",
+      githubLink:
+        "https://github.com/RajKeshkar1709/ai-command-assistant",
+      liveLink: "https://ai-command-assistant.netlify.app/",
     },
     {
       id: 3,
-      title: "Property Listing",
-      image: "/Propertylisting.png",
+      title: "NovelHub",
+      image: "/NovelHub.png",
       description:
-        "A lightning‑fast React + Vite web app for discovering, filtering, and inquiring about real‑estate listings.",
-      techStack: "HTML | React | Firebase | Javascript | Tailwind CSS | Vanilla CSS | React Icons",
+        "NovelHub is a clean and interactive web platform for discovering, organizing, and managing novels. Designed with a user-friendly interface, it allows users to add, edit, and view novels easily while showcasing dynamic content updates and smooth navigation using pure JavaScript.",
+      techStack: "HTML | CSS | Firebase | Javascript",
       features:
-        "Responsive Design, Powerful Search & Filters, Grid ↔︎ List Toggle, Image Carousel, Quick Inquiry Form, .",
-      githubLink: "https://github.com/saurabhshambharkar/Property-Listing-Project",
-      liveLink: "https://musical-lollipop-c8f36b.netlify.app/",
+        "Add / Edit / View novels,Responsive design,Clean UI with HTML & CSS,Dynamic DOM updates",
+      githubLink: "https://github.com/RajKeshkar1709/Novelhub",
+      liveLink: "https://simplenovelhub.netlify.app/",
     },
+    {
+      id: 4,
+      title: "HireHub – Recruitment Management API (Backend)",
+      image: "",
+      description:
+        "HireHub is a robust and scalable backend system designed to power a modern recruitment platform. Built using Node.js, Express, and MongoDB, it supports job postings, applications, referrals, interview scheduling, and role-based access for recruiters and jobseekers.",
+      techStack: "Node.js | Express.js | MongoDB | PostMan | Javascript | JWT Web Token",
+      features:
+        "JWT-based authentication, Role-based access (Recruiter & Jobseeker), Create and manage job posts, Apply to jobs & track applications, Schedule interviews & give feedback, Candidate ranking system, Referral handling, Clean RESTful API architecture, MongoDB with Mongoose for data modeling",
+      githubLink: "https://github.com/RajKeshkar1709/HireHub",
+      liveLink: "https://github.com/RajKeshkar1709/HireHub",
+    }
   ];
 
   return (
@@ -93,12 +106,6 @@ const Projects = () => {
 
               <div className="mt-6 flex gap-4">
                 <button
-                  onClick={() => openInNewTab(project.githubLink)}
-                  className="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700 transition"
-                >
-                  GitHub
-                </button>
-                <button
                   onClick={() => openInNewTab(project.liveLink)}
                   className="flex-1 bg-red-600 text-white py-2 rounded-lg hover:bg-red-500 transition"
                 >
@@ -108,40 +115,6 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-16">
-        <h2 className="text-center text-3xl font-semibold mb-12 dark:text-white">
-          GitHub Contributions
-        </h2>
-
-        <div className="flex justify-center mb-12">
-          <GitHubCalendar
-            username="saurabhshambharkar"
-            colorScheme="dark"
-            blockSize={15}
-            blockMargin={5}
-            fontSize={16}
-          />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="flex justify-center w-full m-6">
-            <img
-              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=saurabhshambharkar&theme=github_dark"
-              alt="Contribution Graph"
-              className="rounded-lg shadow-lg max-w-full"
-            />
-          </div>
-
-          <div className="flex justify-center w-full">
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=saurabhshambharkar&layout=compact&theme=radical"
-              alt="Most Used Languages"
-              className="rounded-lg shadow-lg max-w-full"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );
