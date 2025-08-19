@@ -20,9 +20,10 @@ const Home = () => {
     <div name="home" className="h-screen flex items-center justify-center">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <img
-          src="Raj.jpeg"
+          src="raj 2.jpg"
           alt="Raj Keshkar"
-          className="border-8 border-gray-500 rounded-full mx-auto my-6 w-80 h-80"
+           className="border-8 border-gray-500 rounded-full mx-auto my-6 w-80 h-80"
+          
         />
         <h1 className="text-5xl font-bold mb-4">Hi I&apos;m Raj Keshkar</h1>
         <p className="text-3xl text-white-700">MERN Stack Developer</p>
