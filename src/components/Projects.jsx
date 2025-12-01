@@ -6,8 +6,21 @@ const Projects = () => {
   };
 
   const projects = [
+   {
+  id: 1,
+  title: "GreenCart – Online Grocery Store",
+  image: "/RajKeshkar/public/GeenCart Image.png",
+  description:
+    "GreenCart is a full-stack e-commerce web application that allows users to browse, search, and purchase grocery products online. It features user authentication, a shopping cart, order management, and real-time updates for sellers.",
+  techStack: "React | Vite | TailwindCSS | Node.js | Express | MongoDB | JWT | Cloudinary | Stripe",
+  features:
+    "User authentication with JWT, product browsing and search, dynamic shopping cart, order placement, seller dashboard with order management, secure payment integration with Stripe, image upload with Cloudinary, responsive and modern UI design.",
+  githubLink: "https://github.com/RajKeshkar1709/GreenCart",
+  liveLink: "https://green-cart-grocery-hazel.vercel.app/" // Replace with your actual deployed link
+}
+,
     {
-      id: 1,
+      id: 2,
       title: "WorldAtlas – Discover Countries with Ease",
       image: "/RajKeshkar/worldAtlas.png",
       description:
@@ -20,7 +33,7 @@ const Projects = () => {
       liveLink: "https://worldatlas-countryexplorers.netlify.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "ai-command-assistant",
       image: "/RajKeshkar/Ai-Assistant.png",
       description:
@@ -32,7 +45,7 @@ const Projects = () => {
       liveLink: "https://ai-command-assistant.netlify.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "NovelHub",
       image: "/RajKeshkar/NovelHub.png",
       description:
@@ -44,7 +57,7 @@ const Projects = () => {
       liveLink: "https://simplenovelhub.netlify.app/",
     },
     {
-      id: 4,
+      id: 5,
       title: "HireHub – Recruitment Management API (Backend)",
       image: "", // No image
       description:
