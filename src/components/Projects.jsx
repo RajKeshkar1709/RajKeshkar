@@ -9,7 +9,7 @@ const Projects = () => {
    {
   id: 1,
   title: "GreenCart – Online Grocery Store",
-  image: "/RajKeshkar/GeenCart Image.png",
+  image: "/RajKeshkar/GeenCart.png",
   description:
     "GreenCart is a full-stack e-commerce web application that allows users to browse, search, and purchase grocery products online. It features user authentication, a shopping cart, order management, and real-time updates for sellers.",
   techStack: "React | Vite | TailwindCSS | Node.js | Express | MongoDB | JWT | Cloudinary | Stripe",
